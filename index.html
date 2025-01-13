@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site officiel de Nolannax, chaîne YouTube de gaming. Rejoins-nous pour des vidéos passionnantes et de l'action !">
+    <title>Nolannax - Chaîne YouTube Gaming</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Fond noir */
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+            padding-right: 15px; /* Pour éviter le chevauchement avec la barre de défilement */
+        }
+
+        h1, h2 {
+            color: #00bfff; /* Bleu clair */
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #00bfff; /* Bleu clair */
+            border-radius: 10px;
+            border: 3px solid #121212; /* Fond noir */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #333;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #007f7f; /* Un bleu un peu plus foncé quand survolé */
+        }
+
+        /* Header */
+        header {
+            background-color: #1a1a1a;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            transition: transform 0.3s ease;
+        }
+
+        header h1:hover {
+            transform: scale(1.1);
+        }
+
+        /* Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 50px;
+            animation: slideIn 1s ease-out;
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 1.5em;
+            background-color: #333;
+            width: 70px;
+            height: 70px;
+            transition: background-color 0.3s, transform 0.3s ease;
+        }
+
+        .social-links a.instagram {
+            background-color: #e1306c;
+        }
+
+        .social-links a.youtube {
+            background-color: #ff0000;
+        }
+
+        .social-links a:hover {
+            background-color: #00bfff;
+            transform: scale(1.1);
+        }
+
+        .social-links img {
+            width: 30px; /* Taille des logos */
+            height: 30px;
+        }
+
+        /* New Sections */
+        .videos {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .videos h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .video-card {
+            width: 300px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: scale(1.05);
+        }
+
+        .video-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .video-card p {
+            padding: 15px;
+            font-size: 1.1em;
+            color: #aaa;
+        }
+
+        /* About Channel Section */
+        .about-channel {
+            text-align: center;
+            background-color: #1a1a1a;
+            padding: 30px;
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-channel h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .about-channel p {
+            font-size: 1.2em;
+            color: #aaa;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #1a1a1a;
+            color: #aaa;
+            padding: 20px;
+            margin-top: 50px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenue sur la chaîne Nolannax - Gaming</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>À propos de Nolannax</h2>
+            <p>Bienvenue sur la chaîne YouTube Nolannax ! Ici, tu trouveras des vidéos de gaming, des let's play, des défis et beaucoup d'action. Si tu es fan de jeux vidéo, tu es au bon endroit !</p>
+            <p>Abonne-toi et ne rate aucune vidéo !</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/nolannax.off/" class="instagram" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/channel/UC_7fD1Kzzq4NzrptTwCPClA" class="youtube" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+            </a>
+        </div>
+
+        <!-- Section Vidéos populaires -->
+        <div class="videos">
+            <h2>Vidéos Populaires</h2>
+            <div class="video-container">
+                <div class="video-card">
+                    <img src="https://img.youtube.com/vi/a8009lbhwys/maxresdefault.jpg" alt="Vidéo 1">
+                    <p>Mon père joue pour la première fois à Fortnite 🎮🔥 avec Zoé et Liam !</p>
+                </div>
+                <div class="video-card">
+                    <img src="https://img.youtube.com/vi/iDa5rR-JiBc/maxresdefault.jpg" alt="Vidéo 2">
+                    <p>Prisonniers des ténèbres dans FromTheFog 🌫️👹 (feat. LiamNoelix) épisode 2</p>
+                </div>
+                <div class="video-card">
+                    <img src="https://img.youtube.com/vi/3IOSkOAjxno/maxresdefault.jpg" alt="Vidéo 3">
+                    <p>2025</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section À propos de la chaîne -->
+        <div class="about-channel">
+            <h2>À propos de ma chaîne YouTube</h2>
+            <p>Sur la chaîne Nolannax, je propose des vidéos de gaming, des streams en direct, des challenges et des moments fun. Si tu es passionné par les jeux vidéo, abonne-toi à ma chaîne pour ne manquer aucun moment de jeu !</p>
+            <a href="https://www.youtube.com/channel/UC_7fD1Kzzq4NzrptTwCPClA" target="_blank" style="color: #00bfff; font-size: 1.2em; text-decoration: underline;">Visitez ma chaîne YouTube</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Nolannax - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
